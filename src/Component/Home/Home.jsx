@@ -1,10 +1,11 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigation } from 'react-router-dom';
 import User from '../User/User';
 import './Home.css'
 
 const Home = () => {
     const usersData = useLoaderData()
+    
     return (
         <div className='users'>
             {
