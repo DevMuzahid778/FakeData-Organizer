@@ -9,7 +9,7 @@ const User = (prop) => {
             <p><span>id:</span> {id}</p>
             <p><span>name:</span> {name}</p>
             <p><span>Username:</span> {username}</p>
-            <Link to={`/${id}`}>
+            <Link to={`users/${id}`}>
                 <button className='Button'>Get Details</button>
             </Link>
         </div>
