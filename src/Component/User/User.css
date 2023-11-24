@@ -1,0 +1,20 @@
+.User{
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #95A0A7;
+    margin-bottom: 10px;
+    text-align: center;
+}
+span{
+    font-weight: 700;
+}
+.Button{
+    width: 50%;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(7, 138, 7);
+    color: white;
+    font-weight: 700;
+}
