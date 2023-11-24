@@ -10,6 +10,7 @@ import {
 import Root from './Component/Layout/Root/Root.jsx';
 import Home from './Component/Home/Home.jsx';
 import About from './Component/About/About.jsx';
+import UserDetails from './Component/UserDetails/UserDetails.jsx';
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
       {
         path:'/about',
         element: <About></About>
+      },
+      {
+        path: "/:userId",
+        element: <UserDetails />,
+        loader: ({params})=> fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`)
       },
     ]
   },
